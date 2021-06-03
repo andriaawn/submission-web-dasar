@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+body {
+    font-family: 'Roboto Slab';
+    padding: 0;
+    margin: 0 250px;
+    color: black;
+}
+
+.iSlides {display: none}
+.slide-img {vertical-align: middle;}
+
+.slideshow {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+    padding: 25px;
+    width: 20%;
+}
+
+nav {
+    float: right;
+    padding: 20px;
+}
+
+nav ul li {
+    display: inline;
+    list-style-type: none;
+    padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fb9300;
+}
+
+nav a:hover {
+    font-weight: bold;
+    color: black;
+}
+
+/* .jumbotron img {
+    max-width: 100%;
+    height: auto;
+} */
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 16px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.flexbox_container {
+    display: flex;
+ 
+    /* Properti lainnya */
+    margin: 0;
+}
+
+.box {
+    flex-basis: 100%;
+    background-color: #fdfaf6;
+    margin: 0 auto;
+}
+
+.box a {
+    text-decoration: none;
+    color: black;
+}
+
+.box a:hover {
+    font-weight: bold;
+    color: #fdfaf6;
+}
+
+.text {
+    flex-direction: row;
+    background-color: #fdfaf6;
+    padding: 20px;
+    height: 299px;
+}
+
+.display-paragraph {
+    font-family: 'Roboto Slab';
+    text-align: center;
+    font-size: 34px;
+    padding: 20px;
+}
+
+.img {
+    flex-direction: row;
+    flex: 80%;
+}
+
+.display-img {
+    max-width: 100%;
+} 
+
+.development:hover {
+    background-color: #c2b092;
+}
+
+.development h4 {
+    text-align: center;
+    font-family: 'Roboto Slab';
+    font-size: 25px;
+}
+
+.icon-web {
+    max-width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+}
+
+.infrastructure:hover {
+    background-color: #eae3c8;
+}
+
+.infrastructure h4 {
+    text-align: center;
+    font-family: 'Roboto Slab';
+    font-size: 25px;
+}
+
+.icon-it {
+    max-width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+}
+
+.bigData:hover {
+    background-color: #cfc5a5;
+}
+
+.bigData h4 {
+    text-align: center;
+    font-family: 'Roboto Slab';
+    font-size: 25px;
+}
+
+.icon-data {
+    max-width: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 40px;
+}
+
+.about {
+    flex-basis: 30%;
+    background-color: white;
+    padding: 20px;
+}
+
+.photo {
+    max-width: 70%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+}
+
+.photo:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.biodata {
+    flex-basis: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+.blog1 {
+    background-color: #fdfaf6;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.blog2 {
+    background-color: #fdfaf6;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.blog3 {
+    background-color: #fdfaf6;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.blog4 {
+    background-color: #fdfaf6;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.blog1 img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.blog1:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.blog1 p {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+}
+
+.blog1 a:hover {
+    font-weight: bold;
+    color: black;
+}
+
+.blog2 img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.blog2:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.blog2 p {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+}
+
+.blog2 a:hover {
+    font-weight: bold;
+    color: black;
+}
+
+.blog3 img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.blog3:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.blog3 p {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+}
+
+.blog3 a:hover {
+    font-weight: bold;
+    color: black;
+}
+
+.blog4 img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.blog4:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.blog4 p {
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+}
+
+.blog4 a:hover {
+    font-weight: bold;
+    color: black;
+}
+
+footer {
+    background-color: #faf1e6;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .logo {
+        width: 100%;
+    }
+    nav { 
+        float: left;
+        width: 100%;
+    }
+    nav ul li {
+        padding: 4px;
+        margin: 0 auto;
+    }
+    #content {
+        width: 100%;
+    }
+    .flexbox_container {
+        flex-direction: column;
+    }
+    .text {
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    .display-img {
+        border-radius: 10px;
+    }
+    .display-paragraph {
+        font-size: 30px;
+        padding: 10px;
+    }
+    .development {
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    .infrastructure {
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    .bigData {
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+    .photo {
+        width: 100%;
+        border-radius: 10px;
+    }
+    .prev, .next {
+        margin-top: 22px;
+    }
+}

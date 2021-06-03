@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SwiftAre</title>
+  <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="./assets/images/_logo.png" alt="company-image" class="logo"></a>
+    <nav>
+      <ul>
+        <li><a href="#why_us">Why us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="content">
+      <div class="slideshow">
+        <div class="iSlides fade">
+          <img src="./assets/images/jumbotron1.jpg" style="width:100%" class="slide-img">
+        </div>
+        <div class="iSlides fade">
+          <img src="./assets/images/jumbotron2.jpg" style="width:100%" class="slide-img">
+        </div>
+        <div class="iSlides fade">
+          <img src="./assets/images/jumbotron3.jpg" style="width:100%" class="slide-img">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <article id="why_us" class="card">
+        <h2>Why us</h2>
+        <div class="flexbox_container">
+          <div class="box text">
+            <p class="display-paragraph">"Now, every company is transforming to digital and we want to help them
+              <em><strong>faster</strong></em>."
+            </p>
+          </div>
+          <div class="box img">
+            <img src="./assets/images/image.jpg" alt="image" class="display-img">
+          </div>
+        </div>
+      </article>
+      <article id="services" class="card">
+        <h2>Services</h2>
+        <div class="flexbox_container">
+          <div class="box development">
+            <img src="./assets/images/web-icon.png" alt="web-icon" class="icon-web">
+            <h4><a href="#">Web Development</a></h4>
+            <p></p>
+          </div>
+          <div class="box infrastructure">
+            <img src="./assets/images/it-icon.png" alt="it-icon" class="icon-it">
+            <h4><a href="#">IT Infrastructure</a></h4>
+            <p></p>
+          </div>
+          <div class="box bigData">
+            <img src="./assets/images/data-icon.png" alt="data-icon" class="icon-data">
+            <h4><a href="#">Big Data</a></h4>
+            <p></p>
+          </div>
+        </div>
+      </article>
+      <article id="blog" class="card">
+        <h2>Blog</h2>
+        <div class="flexbox_container">
+          <div class="box blog1">
+            <article>
+              <img src="./assets/images/webdev.jpg" alt="">
+              <h3>What is Web Development?</h3>
+              <p>Web development is the building and maintenance of websites.
+                <br><a href="https://blog.openclassrooms.com/en/2018/03/28/web-development-definition/"
+                  target="_blank"><em>Learn more..</em></a>
+              </p>
+            </article>
+          </div>
+          <div class="box blog2">
+            <article>
+              <img src="./assets/images/learn.jpg" alt="">
+              <h3>Best Programming Languages to Learn in 2021</h3>
+              <p>So you want to be a developer? Now’s a great time to learn programming.
+                <br><a href="https://kinsta.com/blog/best-programming-language-to-learn/" target="_blank"><em>Learn
+                    more..</em></a>
+              </p>
+            </article>
+          </div>
+          <div class="box blog3">
+            <article>
+              <img src="./assets/images/datacenter.jpg" alt="">
+              <h3>Cloud Computing Architecture</h3>
+              <p>Cloud computing architecture is a combination of service-oriented architecture and event-driven
+                architecture.
+                <br><a href="https://www.javatpoint.com/cloud-computing-architecture" target="_blank"><em>Learn
+                    more..</em></a>
+              </p>
+            </article>
+          </div>
+          <div class="box blog4">
+            <article>
+              <img src="./assets/images/bigdata.jpg" alt="">
+              <h3>Big Data Analytics - What it is and why it matters</h3>
+              <p>Big data analytics has opened the door to better decision-making for businesses.
+                <br><a href="https://www.solvexia.com/blog/what-is-big-data-analytics-why-it-matters-to-you"
+                  target="_blank"><em>Learn more..</em></a>
+              </p>
+            </article>
+          </div>
+        </div>
+      </article>
+    </div>
+    <aside>
+      <article id="about" class="card">
+        <h2>About</h2>
+        <div class="flexbox_container">
+          <div class="box about">
+            <img src="./assets/images/foto.jpg" alt="myphoto" class="photo">
+          </div>
+          <div class="box biodata">
+            <p>Halo, perkenalkan nama saya Andriawan, umur 22 tahun. Saat ini saya bekerja sebagai IT Staff di
+              perusahaan logistik swasta di Indonesia.
+              Selain bekerja, saya juga sedang menempuh pendidikan strata 1 di Universitas swasta di Jakarta jurusan
+              Teknik Informatika.
+              <br><br>Senang sekali rasanya bisa mendapatkan beasiswa dari IDCamp dan juga Dicoding.
+              <br>Ilmu dan juga pengalaman baru dari kelas ini sangat bermanfaat dan memberikan semangat kepada saya.
+              <br>Terima kasih.
+            </p>
+          </div>
+        </div>
+      </article>
+    </aside>
+  </main>
+  <footer>
+    &copy; 2021, SwiftAre tech.
+  </footer>
+  <script src="./assets/styles/slider.js"></script>
+</body>
+
+</html>
